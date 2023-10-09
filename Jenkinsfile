@@ -24,7 +24,7 @@ pipeline {
                 branch 'development'
             }
             steps {
-                sh './jenkins/scripts/delivery-for-development.sh'
+                sh './jenkins/scripts/deliver-for-development.sh'
                 input message: 'Finished using the web site? (Click "proceed" to continue)'
                 sh './jenkins/scripts/kill.sh'
             }
