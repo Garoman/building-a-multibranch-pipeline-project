@@ -34,7 +34,7 @@ pipeline {
                 branch 'production'
             }
             steps {
-                sh './jeknins/scripts/deploy-for-production.sh'
+                sh './jenkins/scripts/deploy-for-production.sh'
                 input message: 'Finished using the web site? (Click "proceed" to continue)'
                 sh './jenkins/scripts/kill.sh'
             }
